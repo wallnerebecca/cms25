@@ -1,0 +1,22 @@
+@import './PageTsConfig/BackendLayouts/'
+
+RTE {
+    default {
+        preset = kwm2025
+    }
+}
+
+TCEFORM {
+    pages {
+
+    }
+    tt_content {
+        header_layout.addItems.10 = ----------------------
+        header_layout.addItems.11 = HomepageHeader
+    }
+}
+
+TCEMAIN {
+
+}
+

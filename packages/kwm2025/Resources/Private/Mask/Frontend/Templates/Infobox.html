@@ -1,0 +1,50 @@
+<f:layout name="Default" />
+<f:section name="Main">
+<div class = "infobox">
+    <ul>
+        <li>
+            <f:if condition="{data.tx_mask_termin}">
+                {data.tx_mask_termin}
+            </f:if>
+
+            <f:if condition="{data.tx_mask_course_parts}">
+                <ul>
+                    <f:for each="{data.tx_mask_course_parts}" as="data_item">
+                        <li>
+                            <f:if condition="{data_item.tx_mask_part}">
+                                {data_item.tx_mask_part}
+                            </f:if>
+                            <f:if condition="{data_item.tx_mask_date}">
+                                {data_item.tx_mask_date}
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+        </li>
+
+        <f:if condition="{data.tx_mask_elements}">
+                <f:for each="{data.tx_mask_elements}" as="data_item">
+                    <li>
+                        <f:if condition="{data_item.tx_mask_key}">
+                            {data_item.tx_mask_key}
+                        </f:if>
+                            <ul>
+                                <li>
+                                    <f:if condition="{data_item.tx_mask_value}">
+                                        {data_item.tx_mask_value}
+                                    </f:if>
+                                </li>
+                            </ul>
+                    </li>
+                </f:for>
+        </f:if>
+    </ul>
+    <hr>
+    <f:if condition="{data.tx_mask_img}">
+        <f:for each="{data.tx_mask_img}" as="data_item">
+            <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+        </f:for>
+    </f:if>
+</div>
+</f:section>
