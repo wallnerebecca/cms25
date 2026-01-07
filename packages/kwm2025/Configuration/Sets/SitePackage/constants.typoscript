@@ -1,0 +1,13 @@
+plugin.tx_news.view.twb5.templateRootPath = EXT:kwm2025/Resources/Private/Templates/ExtNews/
+plugin.tx_news.view.twb5.partialRootPath = EXT:kwm2025/Resources/Private/Partials/ExtNews/
+plugin.tx_news.view.twb5.layoutRootPath = EXT:kwm2025/Resources/Private/Layout/ExtNews/
+
+plugin.tx_felogin_login.view.templateRootPath = EXT:kwm2025/Resources/Private/Templates/ContentElements/
+
+
+plugin.backgroundimage {
+    # cat=plugin.tx_backgroundimage//10; type=boolean; label=Slide:Inherit picture from parent pages if you haven't uploaded one for the actual page.
+    slide = 0
+    # cat=plugin.tx_backgroundimage//20; type=string; label=CSS selector:Specify where your uploaded image should be shown.
+    target = html body
+}

@@ -1,4 +1,9 @@
 @import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
+
+@import 'EXT:backgroundimage/Configuration/TypoScript/setup.typoscript'
+
 
 page {
     includeCSS {
@@ -22,6 +27,22 @@ page {
     }
 }
 
+tt_content.slickimage =< lib.contentElement
+tt_content.slickimage {
+    templateRootPaths {
+        10 = EXT:slick/Resources/Private/Fluid/FluidStyledContent/Templates/
+    }
+    partialRootPaths {
+        10 = EXT:slick/Resources/Private/Fluid/FluidStyledContent/Partials/
+    }
+    layoutRootPaths {
+        10 = EXT:slick/Resources/Private/Fluid/FluidStyledContent/Layouts/
+    }
+
+    templateName = Slickimage
+}
+
+
 lib.maskContentElement {
     templateRootPaths {
         5 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements
@@ -33,3 +54,15 @@ lib.maskContentElement {
         5 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements
     }
 }
+
+lib.record = RECORDS
+lib.record {
+    source.data = current:1
+    source.intval = 1
+    tables = tt_content
+}
+
+plugin.tx_form.settings.yamlConfigurations.100 = EXT:kwm2025/Configuration/Form/setup.yaml
+module.tx_form.settings.yamlConfigurations.100 = EXT:kwm2025/Configuration/Form/setup.yaml
+
+

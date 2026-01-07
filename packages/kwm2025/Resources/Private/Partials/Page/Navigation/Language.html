@@ -1,0 +1,19 @@
+<f:if condition="{languagenavigation}">
+    <ul id="language_menu" class="language-menu">
+        <f:for each="{languagenavigation}" as="item">
+            <f:if condition="{item.active} == false">
+                <f:then>
+                    <f:if condition="{item.available}">
+                        <f:then>
+                            <li>
+                                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                                    <f:image src="EXT:kwm2025/Resources/Public/Icons/{item.hreflang}.svg" alt="{item.title}" class="lang-icon" />
+                                </a>
+                            </li>
+                        </f:then>
+                    </f:if>
+                </f:then>
+            </f:if>
+        </f:for>
+    </ul>
+</f:if>
