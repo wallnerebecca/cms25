@@ -18,8 +18,8 @@ page:
     file: 'EXT:kwm2025/Resources/Public/Images/logo.svg'
     fileInverted: 'EXT:kwm2025/Resources/Public/Images/logo-inverted.svg'
     width: 192
-    alt: 'My Site Package'
-    linktitle: 'My Site Package'
+    alt: 'Wallner'
+    linktitle: 'Wallner'
   favicon:
     file: 'EXT:kwm2025/Resources/Public/Icons/favicon.ico'
   fluidtemplate:

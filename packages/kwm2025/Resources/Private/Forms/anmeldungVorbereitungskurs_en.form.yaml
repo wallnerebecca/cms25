@@ -1,14 +1,14 @@
 
 renderingOptions:
-  submitButtonLabel: Absenden
+  submitButtonLabel: Submit
 type: Form
-identifier: Anmeldung Vorbereitungskurs
-label: Anmeldung Vorbereitungskurs
+identifier: Anmeldung_en
+label: Anmeldung_en
 prototypeName: standard
 finishers:
   -
     options:
-      subject: 'Anmeldung VBK - {text-2} {text-3}'
+      subject: 'Registration VBK - {text-2} {text-3}'
       recipients:
         s2410456031@students.fh-hagenberg.at: 'Rebecca Wallner'
       senderAddress: '{email-1}'
@@ -17,19 +17,19 @@ finishers:
       attachUploads: true
       translation:
         language: default
-      title: 'Anmeldung VBK - {text-2} {text-3}'
+      title: 'Registration VBK - {text-2} {text-3}'
     identifier: EmailToReceiver
     defaultValue: ''
   -
     options:
-      subject: 'Anmeldung Hufbeschlagschule Stadl-Paura'
+      subject: 'Registration Farriery School Stadl-Paura'
       recipients:
         '{email-1}': '{text-3}'
       senderAddress: s2410456031@students.fh-hagenberg.at
-      senderName: 'Hufbeschlagschule Stadl-Paura'
+      senderName: 'Farriery School Stadl-Paura'
       addHtmlPart: true
       attachUploads: true
-      title: 'Danke für Ihre Anmeldung'
+      title: 'Thank you for your registration'
       translation:
         language: default
     identifier: EmailToSender
@@ -38,13 +38,13 @@ finishers:
     options:
       pageUid: '41'
       additionalParameters: ''
-      fragment: '102'
+      fragment: '103'
     identifier: Redirect
 renderables:
   -
     renderingOptions:
-      previousButtonLabel: Zurück
-      nextButtonLabel: Weiter
+      previousButtonLabel: Back
+      nextButtonLabel: Next
     type: Page
     identifier: page-1
     label: ''
@@ -58,7 +58,7 @@ renderables:
             defaultValue: ''
             type: Text
             identifier: text-1
-            label: Anrede
+            label: Salutation
       -
         type: GridRow
         identifier: gridrow-2
@@ -68,7 +68,7 @@ renderables:
             defaultValue: ''
             type: Text
             identifier: text-2
-            label: Vorname
+            label: 'First name'
             properties:
               fluidAdditionalAttributes:
                 required: required
@@ -78,31 +78,31 @@ renderables:
               validationErrorMessages:
                 -
                   code: 1221560910
-                  message: 'Bitte einen Vornamen angeben.'
+                  message: 'Please enter a first name.'
                 -
                   code: 1221560718
-                  message: 'Bitte einen Vornamen angeben.'
+                  message: 'Please enter a first name.'
                 -
                   code: 1347992400
-                  message: 'Bitte einen Vornamen angeben.'
+                  message: 'Please enter a first name.'
                 -
                   code: 1347992453
-                  message: 'Bitte einen Vornamen angeben.'
+                  message: 'Please enter a first name.'
                 -
                   code: 1238110957
-                  message: 'Vorname muss mind. 3 und max. 100 Zeichen haben'
+                  message: 'First name must be between 3 and 100 characters.'
                 -
                   code: 1269883975
-                  message: 'Vorname muss mind. 3 und max. 100 Zeichen haben'
+                  message: 'First name must be between 3 and 100 characters.'
                 -
                   code: 1428504122
-                  message: 'Vorname muss mind. 3 und max. 100 Zeichen haben'
+                  message: 'First name must be between 3 and 100 characters.'
                 -
                   code: 1238108068
-                  message: 'Vorname muss mind. 3 und max. 100 Zeichen haben'
+                  message: 'First name must be between 3 and 100 characters.'
                 -
                   code: 1238108069
-                  message: 'Vorname muss mind. 3 und max. 100 Zeichen haben'
+                  message: 'First name must be between 3 and 100 characters.'
             validators:
               -
                 identifier: NotEmpty
@@ -115,7 +115,7 @@ renderables:
             defaultValue: ''
             type: Text
             identifier: text-3
-            label: Nachname
+            label: 'Last name'
             properties:
               fluidAdditionalAttributes:
                 autocomplete: family-name
@@ -125,16 +125,16 @@ renderables:
               validationErrorMessages:
                 -
                   code: 1221560910
-                  message: 'Bitte einen Nachnamen angeben'
+                  message: 'Please enter a last name.'
                 -
                   code: 1221560718
-                  message: 'Bitte einen Nachnamen angeben'
+                  message: 'Please enter a last name.'
                 -
                   code: 1347992400
-                  message: 'Bitte einen Nachnamen angeben'
+                  message: 'Please enter a last name.'
                 -
                   code: 1347992453
-                  message: 'Bitte einen Nachnamen angeben'
+                  message: 'Please enter a last name.'
             validators:
               -
                 identifier: NotEmpty
@@ -152,7 +152,7 @@ renderables:
             defaultValue: ''
             type: Email
             identifier: email-1
-            label: E-Mail
+            label: Email
             properties:
               fluidAdditionalAttributes:
                 required: required
@@ -160,7 +160,7 @@ renderables:
               validationErrorMessages:
                 -
                   code: 1221559976
-                  message: 'Bitte eine gültige E-Mail angeben.'
+                  message: 'Please enter a valid email address.'
             validators:
               -
                 identifier: EmailAddress
@@ -170,7 +170,7 @@ renderables:
             defaultValue: ''
             type: Telephone
             identifier: telephone-1
-            label: Telefonnummer
+            label: 'Phone number'
             properties:
               fluidAdditionalAttributes:
                 required: required
@@ -178,23 +178,23 @@ renderables:
               validationErrorMessages:
                 -
                   code: 1221560910
-                  message: 'Bitte eine Telefonnummer angeben.'
+                  message: 'Please enter a phone number.'
                 -
                   code: 1221560718
-                  message: 'Bitte eine Telefonnummer angeben.'
+                  message: 'Please enter a phone number.'
                 -
                   code: 1347992400
-                  message: 'Bitte eine Telefonnummer angeben.'
+                  message: 'Please enter a phone number.'
                 -
                   code: 1347992453
-                  message: 'Bitte eine Telefonnummer angeben.'
+                  message: 'Please enter a phone number.'
             validators:
               -
                 identifier: NotEmpty
   -
     renderingOptions:
-      previousButtonLabel: Zurück
-      nextButtonLabel: Weiter
+      previousButtonLabel: Back
+      nextButtonLabel: Next
     type: Page
     identifier: page-2
     label: ''
@@ -213,7 +213,7 @@ renderables:
                 defaultValue: ''
                 type: Text
                 identifier: text-4
-                label: 'Adresszeile 1'
+                label: 'Address line 1'
                 properties:
                   fluidAdditionalAttributes:
                     required: required
@@ -223,32 +223,31 @@ renderables:
                   validationErrorMessages:
                     -
                       code: 1221560910
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1221560718
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1347992400
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1347992453
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1238110957
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1269883975
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1428504122
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1238108068
-                      message: 'Bitte eine gültige Adresse angeben.'
+                      message: 'Please enter a valid address.'
                     -
                       code: 1238108069
-                      message: 'Bitte eine gültige Adresse angeben.'
-                  elementDescription: ''
+                      message: 'Please enter a valid address.'
                 validators:
                   -
                     identifier: NotEmpty
@@ -261,7 +260,7 @@ renderables:
                 defaultValue: ''
                 type: Text
                 identifier: text-6
-                label: 'Adresszeile 2'
+                label: 'Address line 2'
                 properties:
                   fluidAdditionalAttributes:
                     autocomplete: address-line2
@@ -269,23 +268,23 @@ renderables:
                 defaultValue: ''
                 type: Text
                 identifier: text-7
-                label: Ort
+                label: City
                 properties:
                   fluidAdditionalAttributes:
                     required: required
                   validationErrorMessages:
                     -
                       code: 1221560910
-                      message: 'Bitte einen Ort angeben.'
+                      message: 'Please enter a city.'
                     -
                       code: 1221560718
-                      message: 'Bitte einen Ort angeben.'
+                      message: 'Please enter a city.'
                     -
                       code: 1347992400
-                      message: 'Bitte einen Ort angeben.'
+                      message: 'Please enter a city.'
                     -
                       code: 1347992453
-                      message: 'Bitte einen Ort angeben.'
+                      message: 'Please enter a city.'
                 validators:
                   -
                     identifier: NotEmpty
@@ -305,38 +304,38 @@ renderables:
                   validationErrorMessages:
                     -
                       code: 1221560910
-                      message: 'Bitte Land auswählen.'
+                      message: 'Please select a country.'
                     -
                       code: 1221560718
-                      message: 'Bitte Land auswählen.'
+                      message: 'Please select a country.'
                     -
                       code: 1347992400
-                      message: 'Bitte Land auswählen.'
+                      message: 'Please select a country.'
                     -
                       code: 1347992453
-                      message: 'Bitte Land auswählen.'
+                      message: 'Please select a country.'
                 type: CountrySelect
                 identifier: countryselect-1
-                label: Land
+                label: Country
                 validators:
                   -
                     identifier: NotEmpty
               -
                 properties:
                   options:
-                    Oberösterreich: Oberösterreich
-                    Wien: Wien
-                    Niederösterreich: Niederösterreich
+                    Oberösterreich: 'Upper Austria'
+                    Wien: Vienna
+                    Niederösterreich: 'Lower Austria'
                     Salzburg: Salzburg
-                    Steiermark: Steiermark
-                    Kärnten: Kärnten
+                    Steiermark: Styria
+                    Kärnten: Carinthia
                     Burgenland: Burgenland
-                    Tirol: Tirol
-                    Voralberg: Voralberg
+                    Tirol: Tyrol
+                    Voralberg: Vorarlberg
                 type: SingleSelect
                 identifier: singleselect-2
-                label: Bundesland
-                defaultValue: Oberösterreich
+                label: 'State / Province'
+                defaultValue: 'Upper Austria'
               -
                 defaultValue: ''
                 properties:
@@ -347,22 +346,22 @@ renderables:
                   validationErrorMessages:
                     -
                       code: 1221560288
-                      message: 'Bitte eine gültige PLZ angeben.'
+                      message: 'Please enter a valid ZIP code.'
                     -
                       code: 1221560910
-                      message: 'Bitte eine PLZ angeben.'
+                      message: 'Please enter a ZIP code.'
                     -
                       code: 1221560718
-                      message: 'Bitte eine PLZ angeben.'
+                      message: 'Please enter a ZIP code.'
                     -
                       code: 1347992400
-                      message: 'Bitte eine PLZ angeben.'
+                      message: 'Please enter a ZIP code.'
                     -
                       code: 1347992453
-                      message: 'Bitte eine PLZ angeben.'
+                      message: 'Please enter a ZIP code.'
                 type: Number
                 identifier: number-1
-                label: PLZ
+                label: 'ZIP code'
                 validators:
                   -
                     identifier: Number
@@ -370,13 +369,14 @@ renderables:
                     identifier: NotEmpty
   -
     renderingOptions:
-      previousButtonLabel: Zurück
-      nextButtonLabel: Weiter
+      previousButtonLabel: Back
+      nextButtonLabel: Next
     type: Page
     identifier: page-3
     label: ''
     renderables:
-      - properties:
+      -
+        properties:
           saveToFileMount: '1:/form_upload/'
           allowedMimeTypes:
             - application/msword
@@ -386,46 +386,52 @@ renderables:
           fluidAdditionalAttributes:
             required: required
           elementDescription: ''
-        validationErrorMessages:
-          - code: 1221560910
-            message: 'Bitte Befähigungsnachweis auswählen.'
-          - code: 1221560718
-            message: 'Bitte Befähigungsnachweis auswählen.'
-          - code: 1347992400
-            message: 'Bitte Befähigungsnachweis auswählen.'
-          - code: 1347992453
-            message: 'Bitte Befähigungsnachweis auswählen.'
-        type: FileUpload
-        identifier: fileupload-1
-        label: Befähigungsnachweis
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte Befähigungsnachweis auswählen.'
+            -
+              code: 1221560718
+              message: 'Bitte Befähigungsnachweis auswählen.'
+            -
+              code: 1347992400
+              message: 'Bitte Befähigungsnachweis auswählen.'
+            -
+              code: 1347992453
+              message: 'Bitte Befähigungsnachweis auswählen.'
+          type: FileUpload
+          identifier: fileupload-2
+          label: Befähigungsnachweis
+          validators:
+            -
+              identifier: NotEmpty
       -
         type: Checkbox
         identifier: checkbox-1
-        label: 'Hiermit erkläre ich mich einverstanden, dass meine in das Anmeldeformular eingegebenen Daten elektronisch gespeichert werden. Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Anmeldeformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert. Ich wurde hiermit darüber informiert, dass ich meine Einwilligung jederzeit widerrufen kann.'
+        label: "I hereby agree that the data I enter into the registration form will be stored electronically. When contacting the provider (for example via the registration form or by email), the user’s information is stored for the purpose of processing the request and in case follow-up questions arise. I have been informed that I can revoke my consent at any time.\n"
         properties:
           fluidAdditionalAttributes:
             required: required
           validationErrorMessages:
             -
               code: 1221560910
-              message: 'Bitte Einwilligung bestätigen.'
+              message: 'Please confirm your consent.'
             -
               code: 1221560718
-              message: 'Bitte Einwilligung bestätigen.'
+              message: 'Please confirm your consent.'
             -
               code: 1347992400
-              message: 'Bitte Einwilligung bestätigen.'
+              message: 'Please confirm your consent.'
             -
               code: 1347992453
-              message: 'Bitte Einwilligung bestätigen.'
+              message: 'Please confirm your consent.'
         validators:
           -
             identifier: NotEmpty
-
   -
     renderingOptions:
-      previousButtonLabel: Zurück
-      nextButtonLabel: Weiter
+      previousButtonLabel: Back
+      nextButtonLabel: Next
     type: SummaryPage
     identifier: summarypage-1
     label: ''
