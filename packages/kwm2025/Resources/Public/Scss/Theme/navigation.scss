@@ -1,0 +1,50 @@
+
+// Navigation
+
+.navbar-nav {
+  --bs-nav-link-color: $brown-secondary;
+  --bs-nav-link-hover-color: #DEDEDE;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: red;
+  background-color: $brown-secondary;
+  padding: 0.6rem 1.5rem;
+  border-radius: 99999px;
+}
+
+.nav-link-text {
+  text-decoration: none !important;
+  font-family: 'Antonio', sans-serif;
+  font-weight: 600;
+}
+
+.navbar-mainnavigation .nav-link.nav-link-main:before {
+  display: none;
+}
+
+.container-mainnavigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-mainnavitems {
+  max-width: max-content;
+  margin-right: 0;
+}
+
+.language-menu {
+  margin-bottom: 0;
+  margin-right: 0.7rem;
+}
+
+// Footer
+.footer-section-meta {
+  background-color: $gray-fill !important;
+}
+
+.footer-navigation-link {
+  text-decoration: none !important;
+  color: $gray-main !important;
+}
+

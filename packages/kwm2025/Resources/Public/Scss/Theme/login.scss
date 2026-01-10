@@ -1,0 +1,33 @@
+.login-box {
+  width: 20rem;
+  background-color: $gray-fill;
+  border: 3px solid $gray-main;
+  border-radius: 0.6rem;
+  padding: 2rem;
+  //padding-right: 4rem;
+}
+
+.login-input-container {
+  padding-right: 4rem;
+}
+#tx-felogin-input-username,
+#tx-felogin-input-password {
+  border-radius: 0.6rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+.felogin-field-wrapper {
+  margin-left: 1rem;
+}
+
+.login-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+}
+

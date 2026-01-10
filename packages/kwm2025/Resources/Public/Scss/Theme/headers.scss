@@ -1,0 +1,33 @@
+
+h1, h2, h3 {
+  font-size: calc(2.5rem + 1.9vw);
+  color: $brown-secondary;
+  font-family: 'Antonio', sans-serif;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.section-default h2 {
+  color: $brown-secondary;
+  text-align: left;
+}
+
+.element-subheader {
+  font-size: 1.692rem;
+  color: $gray-header;
+  line-height: 2.75rem;
+  margin-bottom: 2rem;
+  padding-left: 1.6rem;
+}
+
+.section-default .element-subheader {
+  text-align: left;
+}
+
+.section-default p {
+  text-align: left!important;
+}
+
+.bp-page-header {
+  background-color: $gray-fill !important;
+}

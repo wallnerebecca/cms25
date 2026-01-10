@@ -1,0 +1,119 @@
+//
+// Fonts
+//
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../Fonts/Antonio.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../Fonts/Cuprum.ttf) format('truetype');
+}
+
+//
+// Variables
+//
+@import "variables";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+
+body {
+  font-family: 'Cuprum', sans-serif;
+  letter-spacing: 0.03rem;
+  color: $brown-secondary;
+  background-color: $gray-main;
+  background-image: url("../Images/Hintergrund.svg") !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: cover;
+}
+
+main #p9 {
+  background-color: blue;
+}
+
+
+.body-bg {
+  //position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+
+  background-image: url("../Images/Hintergrund.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  background-size: cover;
+}
+
+.body-bg .backgroundimage,
+.body-bg .backgroundimage img {
+  width: 100%;
+  height: 100%;
+}
+
+.body-bg .backgroundimage img {
+  object-fit: cover;
+
+}
+
+
+@import "navigation";
+@import "headers";
+@import "main_card";
+@import "infobox";
+@import "login";
+@import "images";
+
+.container-mainnavigation {
+  text-decoration: none !important;
+}
+
+p {
+  padding-left: 1.5rem;
+}
+
+.btn {
+  letter-spacing: 0.17rem;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  --bs-btn-color: $brown-secondary;
+  color: $gray-main;
+  --bs-btn-hover-bg: $gray-main;
+  --bs-btn-hover-color: $brown-secondary;
+  --bs-btn-hover-border-color: $gray-fill;
+  background-image: none;
+  font-family: 'Antonio', sans-serif;
+  border: 2px solid $brown-secondary;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+  box-shadow: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/*
+.frame-type-container_2_columns_left {
+  padding-top: 0;
+}
+*/
+.frame-type-header {
+  padding-bottom: 0;
+}
+
+.frame-space-before-none {
+  --frame-outer-spacing-before: 0;
+}
+
