@@ -1,21 +1,59 @@
+<script>
+function open_modal(element) {
+    let id = element.id
+    let number = id.substring(5)
+    let modal = document.getElementById("modal-" + number)
+
+    modal.style.display = "block"
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none"
+        }
+    }
+}
+
+function close_modal(element) {
+    console.log("close modal event!")
+    let id = element.id
+    let number = id.substring(6)
+    let modal = document.getElementById("modal-" + number)
+
+    modal.style.display = "none"
+}
+</script>
+
 <f:if condition="{data.tx_mask_popup}">
-    <ul>
-        <f:for each="{data.tx_mask_popup}" as="data_item">
-            <li>
-                <f:if condition="{data_item.tx_mask_pfpic}">
-                    <f:for each="{data_item.tx_mask_pfpic}" as="data_item_item">
-                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
-                    </f:for>
-                </f:if>
-                <f:if condition="{data_item.tx_mask_img}">
-                    <f:for each="{data_item.tx_mask_img}" as="data_item_item">
-                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
-                    </f:for>
-                </f:if>
-                <f:if condition="{data_item.tx_mask_text}">
-                    {data_item.tx_mask_text -> f:format.nl2br()}
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
+    <div class="container">
+        <div class="row">
+            <f:for each="{data.tx_mask_popup}" as="data_item" iteration="itemIterator">
+                <div class="col-sm">
+                    <f:if condition="{data_item.tx_mask_pfpic}">
+                        <f:for each="{data_item.tx_mask_pfpic}" as="file">
+                            <f:media id="open-{itemIterator.index}" file="{file}" width="200" alt="{file.description}" additionalAttributes="{onclick: 'open_modal(this)'}"/>
+                        </f:for>
+                    </f:if>
+                    <div id="modal-{itemIterator.index}" class="popup-modal">
+                        <div class="container popup-modal-content">
+                            <span id="close-{itemIterator.index}" class="close-modal" onclick="close_modal(this)">&times;</span>
+                            <div class="row">
+                                <div class="col-6">
+                                    <f:for each="{data_item.tx_mask_img}" as="file">
+                                        <f:media file="{file}" width="400" class="modal-image" alt="{file.description}" />
+                                    </f:for>
+                                </div>
+                                <div class="col-6">
+                                    <f:if condition="{data_item.tx_mask_intro}">
+                                        <f:for each="{data_item.tx_mask_intro}" as="data_item_item">
+                                            <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+                                        </f:for>
+                                    </f:if>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </div>
 </f:if>

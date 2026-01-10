@@ -1,0 +1,56 @@
+#Anmeldung\ Vorbereitungskurs-50,
+#Anmeldung_en-104 {
+  width: 55vw;
+  max-width: 600px;
+  background-color: $gray-fill;
+  border: 3px solid $gray-main;
+  border-radius: 0.6rem;
+  padding: 2rem;
+}
+
+#c50 .frame-inner,
+#c104 .frame-inner,
+.form-navigation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-control,
+.form-select {
+  border-radius: 0.6rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+#Anmeldung\ Vorbereitungskurs-50 .btn-primary:not([value="4"]),
+#Anmeldung_en-104 .btn-primary:not([value="4"]) {
+  background-image: url("../../Images/next.svg");
+}
+
+#Anmeldung\ Vorbereitungskurs-50 .btn-primary[value="1"],
+#Anmeldung_en-104 .btn-primary[value="1"] {
+  margin-left: 10rem;
+}
+
+#Anmeldung\ Vorbereitungskurs-50 .btn-outline-primary:not([value="4"]),
+#Anmeldung_en-104 .btn-outline-primary:not([value="4"]){
+  background-image: url("../../Images/previous.svg");
+}
+
+#Anmeldung\ Vorbereitungskurs-50 .btn:not([value="4"]),
+#Anmeldung_en-104 .btn:not([value="4"]){
+  background-color: $gray-main;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1.5rem;
+  border-radius: 0.6rem;
+  border: none;
+}
+
+#Anmeldung\ Vorbereitungskurs-50 .btn:not([value="4"]):hover,
+#Anmeldung_en-104 .btn:not([value="4"]):hover{
+  background-color: $brown-secondary;
+}
+
+

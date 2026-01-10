@@ -75,6 +75,8 @@ main #p9 {
 @import "infobox";
 @import "login";
 @import "images";
+@import "profile";
+@import "form";
 
 .container-mainnavigation {
   text-decoration: none !important;
@@ -85,8 +87,14 @@ p {
 }
 
 .btn {
-  letter-spacing: 0.17rem;
-  text-transform: uppercase;
+  font-family: 'Antonio', sans-serif;
+  background-image: none;
+  box-shadow: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-transform: none;
+  letter-spacing: 0.05rem;
+  border: 2px solid $brown-secondary;
 }
 
 .btn-primary {
@@ -95,15 +103,8 @@ p {
   --bs-btn-hover-bg: $gray-main;
   --bs-btn-hover-color: $brown-secondary;
   --bs-btn-hover-border-color: $gray-fill;
-  background-image: none;
-  font-family: 'Antonio', sans-serif;
-  border: 2px solid $brown-secondary;
-  text-transform: none;
-  letter-spacing: 0.05rem;
-  box-shadow: none;
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
+
 /*
 .frame-type-container_2_columns_left {
   padding-top: 0;

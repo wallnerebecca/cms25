@@ -43,8 +43,8 @@ finishers:
 renderables:
   -
     renderingOptions:
-      previousButtonLabel: Back
-      nextButtonLabel: Next
+      previousButtonLabel:
+      nextButtonLabel:
     type: Page
     identifier: page-1
     label: ''
@@ -193,8 +193,8 @@ renderables:
                 identifier: NotEmpty
   -
     renderingOptions:
-      previousButtonLabel: Back
-      nextButtonLabel: Next
+      previousButtonLabel:
+      nextButtonLabel:
     type: Page
     identifier: page-2
     label: ''
@@ -369,8 +369,8 @@ renderables:
                     identifier: NotEmpty
   -
     renderingOptions:
-      previousButtonLabel: Back
-      nextButtonLabel: Next
+      previousButtonLabel:
+      nextButtonLabel:
     type: Page
     identifier: page-3
     label: ''
@@ -432,8 +432,8 @@ renderables:
             identifier: NotEmpty
   -
     renderingOptions:
-      previousButtonLabel: Back
-      nextButtonLabel: Next
+      previousButtonLabel:
+      nextButtonLabel:
     type: SummaryPage
     identifier: summarypage-1
     label: ''
