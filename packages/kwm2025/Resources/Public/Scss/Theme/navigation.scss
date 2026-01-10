@@ -7,7 +7,7 @@
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: red;
+  color: $gray-main;
   background-color: $brown-secondary;
   padding: 0.6rem 1.5rem;
   border-radius: 99999px;
