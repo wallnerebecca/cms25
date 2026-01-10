@@ -389,22 +389,24 @@ renderables:
           validationErrorMessages:
             -
               code: 1221560910
-              message: 'Bitte Befähigungsnachweis auswählen.'
+              message: 'Please select proof of qualification.'
             -
               code: 1221560718
-              message: 'Bitte Befähigungsnachweis auswählen.'
+              message: 'Please select proof of qualification.'
             -
               code: 1347992400
-              message: 'Bitte Befähigungsnachweis auswählen.'
+              message: 'Please select proof of qualification.'
             -
               code: 1347992453
-              message: 'Bitte Befähigungsnachweis auswählen.'
-          type: FileUpload
-          identifier: fileupload-2
-          label: Befähigungsnachweis
-          validators:
-            -
-              identifier: NotEmpty
+              message: 'Please select proof of qualification.'
+        type: FileUpload
+        identifier: fileupload-1
+        label: Proof of Qualification
+        validators:
+          -
+            identifier: NotEmpty
+
+
       -
         type: Checkbox
         identifier: checkbox-1

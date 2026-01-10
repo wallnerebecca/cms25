@@ -376,7 +376,8 @@ renderables:
     identifier: page-3
     label: ''
     renderables:
-      - properties:
+      -
+        properties:
           saveToFileMount: '1:/form_upload/'
           allowedMimeTypes:
             - application/msword
@@ -386,18 +387,26 @@ renderables:
           fluidAdditionalAttributes:
             required: required
           elementDescription: ''
-        validationErrorMessages:
-          - code: 1221560910
-            message: 'Bitte Befähigungsnachweis auswählen.'
-          - code: 1221560718
-            message: 'Bitte Befähigungsnachweis auswählen.'
-          - code: 1347992400
-            message: 'Bitte Befähigungsnachweis auswählen.'
-          - code: 1347992453
-            message: 'Bitte Befähigungsnachweis auswählen.'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Bitte Befähigungsnachweis auswählen.'
+            -
+              code: 1221560718
+              message: 'Bitte Befähigungsnachweis auswählen.'
+            -
+              code: 1347992400
+              message: 'Bitte Befähigungsnachweis auswählen.'
+            -
+              code: 1347992453
+              message: 'Bitte Befähigungsnachweis auswählen.'
         type: FileUpload
         identifier: fileupload-1
         label: Befähigungsnachweis
+        validators:
+          -
+            identifier: NotEmpty
+
       -
         type: Checkbox
         identifier: checkbox-1

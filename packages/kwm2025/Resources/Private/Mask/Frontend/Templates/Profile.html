@@ -1,0 +1,24 @@
+<f:if condition="{data.tx_mask_profile}">
+    <ul>
+        <f:for each="{data.tx_mask_profile}" as="data_item">
+            <li>
+                <f:if condition="{data_item.tx_mask_popup_img}">
+                    <f:for each="{data_item.tx_mask_popup_img}" as="data_item_item">
+                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+                    </f:for>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_profile_img}">
+                    <f:for each="{data_item.tx_mask_profile_img}" as="data_item_item">
+                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>
+                    </f:for>
+                </f:if>
+                <f:if condition="{data_item.tx_mask_intro}">
+                    {data_item.tx_mask_intro -> f:format.html()}
+                </f:if>
+                <f:if condition="{data_item.tx_mask_text}">
+                    {data_item.tx_mask_text -> f:format.nl2br()}
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>
