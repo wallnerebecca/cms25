@@ -33,12 +33,12 @@ html body {
   color: $brown-secondary;
 
 //Background Image:
-  background-image: url("../../Images/Hintergrund.svg");
+  background-image: url("../../Images/BackgroundImg.svg");
   background-color: $gray-main;
   background-attachment: unset;
   background-position: left var(--mainnavigation-nav-height);
   background-repeat: no-repeat;
-  //background-size: 100% 100%;
+  background-size: contain;
 }
 
 main {

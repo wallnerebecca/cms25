@@ -1,7 +1,7 @@
 @import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:news/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:news/Configuration/TypoScript/Styles/Twb5/setup.typoscript'
-
+@import 'EXT:slick/Configuration/TypoScript/Default/setup.typoscript'
 @import 'EXT:backgroundimage/Configuration/TypoScript/setup.typoscript'
 
 
@@ -26,6 +26,9 @@ page {
         kwm2025_scripts = EXT:kwm2025/Resources/Public/JavaScript/main.js
     }
 }
+
+page.includeJSFooterlibs.jqquery = EXT:slick/Resources/Public/JavaScript/vendor/jquery.js
+
 
 tt_content.slickimage =< lib.contentElement
 tt_content.slickimage {
@@ -64,5 +67,6 @@ lib.record {
 
 plugin.tx_form.settings.yamlConfigurations.100 = EXT:kwm2025/Configuration/Form/setup.yaml
 module.tx_form.settings.yamlConfigurations.100 = EXT:kwm2025/Configuration/Form/setup.yaml
+
 
 
