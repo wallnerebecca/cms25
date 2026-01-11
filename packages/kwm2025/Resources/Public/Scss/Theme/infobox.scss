@@ -1,9 +1,32 @@
 //SCSS für Infobox
 
+.infobox {
+  min-width: 20vw;
+  max-width: 400px;
+  background-color: $gray-fill;
+  border-radius: 0.6rem;
+  border: 3px solid $gray-main;
+  padding: 0.6rem;
+
+}
+
+.infobox ul {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
 }
 
 hr {
   color: $gray-main;
+  border-top: 2px solid $gray-main;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.infobox img {
+  max-width: 200px;
 }

@@ -70,6 +70,16 @@ renderables:
             identifier: text-2
             label: 'First name'
             properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
               fluidAdditionalAttributes:
                 required: required
                 minlength: '3'
@@ -117,6 +127,16 @@ renderables:
             identifier: text-3
             label: 'Last name'
             properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
               fluidAdditionalAttributes:
                 autocomplete: family-name
                 required: required
@@ -154,6 +174,16 @@ renderables:
             identifier: email-1
             label: Email
             properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
               fluidAdditionalAttributes:
                 required: required
                 autocomplete: email
@@ -172,6 +202,16 @@ renderables:
             identifier: telephone-1
             label: 'Phone number'
             properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
               fluidAdditionalAttributes:
                 required: required
                 autocomplete: tel
@@ -208,6 +248,17 @@ renderables:
             type: GridColumn
             identifier: gridcolumn-1
             label: 'Grid: Column'
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
             renderables:
               -
                 defaultValue: ''
@@ -292,6 +343,17 @@ renderables:
             type: GridColumn
             identifier: gridcolumn-2
             label: 'Grid: Column'
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
             renderables:
               -
                 properties:

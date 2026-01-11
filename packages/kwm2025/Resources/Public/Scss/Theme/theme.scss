@@ -27,33 +27,43 @@
 //
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 
-body {
+html body {
   font-family: 'Cuprum', sans-serif;
   letter-spacing: 0.03rem;
   color: $brown-secondary;
+
+//Background Image:
+  background-image: url("../../Images/Hintergrund.svg");
   background-color: $gray-main;
-  background-image: url("../Images/Hintergrund.svg") !important;
+  background-attachment: unset;
+  background-position: left var(--mainnavigation-nav-height);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: left;
-  background-size: cover;
+  //background-size: 100% 100%;
 }
 
-main #p9 {
-  background-color: blue;
+main {
+  min-height: 80vh;
 }
 
+//Home
+/*
+#p9 html body {
+  background-image: url("../../Images/Hintergrund.svg");
+}
+*/
 
-.body-bg {
+
+
+/*.body-bg {
   //position: fixed;
   inset: 0;
   z-index: -1;
   overflow: hidden;
 
-  background-image: url("../Images/Hintergrund.svg");
+  //background-image: url("../../Images/Hintergrund.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: left;
+  background-position: left top;
   background-size: cover;
 }
 
@@ -67,8 +77,8 @@ main #p9 {
   object-fit: cover;
 
 }
-
-
+*/
+//Imports
 @import "navigation";
 @import "headers";
 @import "main_card";
@@ -77,6 +87,7 @@ main #p9 {
 @import "images";
 @import "profile";
 @import "form";
+@import "customimage";
 
 .container-mainnavigation {
   text-decoration: none !important;
@@ -118,3 +129,18 @@ p {
   --frame-outer-spacing-before: 0;
 }
 
+
+
+//Hufschmiede Wallner
+#p7 p {
+  padding-left: calc(2.5rem + 7vw);
+}
+
+#p7 h1 {
+  padding-left: calc(1.5rem + 7vw);
+}
+
+#c119 .frame-container{
+  padding-left: calc(2.5rem + 7vw - calc(var(--bs-gutter-x) * .5));
+  margin-left: 0;
+}

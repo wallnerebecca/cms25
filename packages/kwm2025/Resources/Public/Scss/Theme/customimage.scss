@@ -1,0 +1,26 @@
+.picture-box {
+  display: block;
+  padding: 10px;
+  position: absolute;
+  float: left;
+  overflow: auto;
+  z-index: 1;
+  width: auto;
+}
+
+.picture-flex-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+
+.picture-image {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  border: 10px solid $gray-main;
+  border-radius: 0.8rem;
+}
+

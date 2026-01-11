@@ -1,5 +1,10 @@
 
 // Navigation
+.navbar-mainnavigation {
+  box-shadow: none;
+  padding-top: calc((var(--mainnavigation-nav-height) - var(--mainnavigation-link-height)) / 3);
+  padding-bottom: calc((var(--mainnavigation-nav-height) - var(--mainnavigation-link-height)) / 3);
+}
 
 .navbar-nav {
   --bs-nav-link-color: $brown-secondary;

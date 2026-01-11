@@ -30,7 +30,7 @@ function close_modal(element) {
                 <div class="col-sm">
                     <f:if condition="{data_item.tx_mask_pfpic}">
                         <f:for each="{data_item.tx_mask_pfpic}" as="file">
-                            <f:media id="open-{itemIterator.index}" file="{file}" width="200" alt="{file.description}" additionalAttributes="{onclick: 'open_modal(this)'}"/>
+                            <f:media id="open-{itemIterator.index}" class="modal-popup-image" file="{file}" width="200" alt="{file.description}" additionalAttributes="{onclick: 'open_modal(this)'}"/>
                         </f:for>
                     </f:if>
                     <div id="modal-{itemIterator.index}" class="popup-modal">
@@ -39,7 +39,7 @@ function close_modal(element) {
                             <div class="row">
                                 <div class="col-6">
                                     <f:for each="{data_item.tx_mask_img}" as="file">
-                                        <f:media file="{file}" width="400" class="modal-image" alt="{file.description}" />
+                                        <f:media file="{file}" class="modal-image" alt="{file.description}" />
                                     </f:for>
                                 </div>
                                 <div class="col-6">

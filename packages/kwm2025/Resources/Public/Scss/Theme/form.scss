@@ -9,7 +9,11 @@
 }
 
 #c50 .frame-inner,
-#c104 .frame-inner,
+#c104 .frame-inner {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .form-navigation {
   display: flex;
   justify-content: space-evenly;
