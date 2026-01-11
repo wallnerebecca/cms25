@@ -8,6 +8,8 @@
 page {
     includeCSS {
         theme = EXT:kwm2025/Resources/Public/Scss/Theme/theme.scss
+        slick = EXT:slick/Resources/Public/JavaScript/slick-1.9.0/slick/slick.css
+        slicktheme = EXT:slick/Resources/Public/JavaScript/slick-1.9.0/slick/slick-theme.css
     }
 
     includeJSLibs {
@@ -19,16 +21,14 @@ page {
     }
 
     includeJSFooterlibs {
-
+        jqquery = EXT:slick/Resources/Public/JavaScript/vendor/jquery.js
+        slick = EXT:slick/Resources/Public/JavaScript/slick-1.9.0/slick/slick.min.js
     }
 
     includeJSFooter {
         kwm2025_scripts = EXT:kwm2025/Resources/Public/JavaScript/main.js
     }
 }
-
-page.includeJSFooterlibs.jqquery = EXT:slick/Resources/Public/JavaScript/vendor/jquery.js
-
 
 tt_content.slickimage =< lib.contentElement
 tt_content.slickimage {

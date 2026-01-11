@@ -10,8 +10,21 @@
                             <f:then>
                                 <li>
                                     <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
-                                        <f:image src="EXT:kwm2025/Resources/Public/Icons/{item.hreflang}.svg" alt="{item.title}" class="lang-icon" />
+                                        <f:image src="EXT:kwm2025/Resources/Public/Icons/{item.hreflang}.svg" alt="{item.title}" class="lang-icon" id="language-normal" />
+                                        <f:image src="EXT:kwm2025/Resources/Public/Icons/World_inverted.svg" alt="{item.title}" class="lang-icon" id="language-white" />
                                     </a>
+
+                                    <script>
+                                        var page = document.getElementById('p9')
+
+                                        if (page) {
+                                            document.getElementById('language-normal').style.display = "none";
+                                            document.getElementById('language-white').style.display = "block";
+                                        } else {
+                                            document.getElementById('language-normal').style.display = "block";
+                                            document.getElementById('language-white').style.display = "none";
+                                        }
+                                    </script>
                                 </li>
                             </f:then>
                         </f:if>

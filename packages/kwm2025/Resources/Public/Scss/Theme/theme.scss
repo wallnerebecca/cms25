@@ -33,12 +33,15 @@ html body {
   color: $brown-secondary;
 
 //Background Image:
-  background-image: url("../../Images/BackgroundImg.svg");
+  background-image: url("../../Images/BackgroundImageBig.svg");
   background-color: $gray-main;
   background-attachment: unset;
   background-position: left var(--mainnavigation-nav-height);
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
 }
 
 main {
@@ -88,6 +91,7 @@ main {
 @import "profile";
 @import "form";
 @import "customimage";
+@import "home";
 
 .container-mainnavigation {
   text-decoration: none !important;
@@ -129,6 +133,11 @@ p {
   --frame-outer-spacing-before: 0;
 }
 
+#page-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
 
 
 //Hufschmiede Wallner

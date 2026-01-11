@@ -1,0 +1,16 @@
+plugin.bootstrap_package.settings.scss.primary: '#42210B'
+plugin.bootstrap_package.settings.scss.secondary: '#BEBEBE'
+plugin.bootstrap_package.settings.scss.tertiary: '#D8D8D8'
+page.theme.copyright.enable: false
+page.theme.socialmedia.enable: false
+page.logo.alt: Wallner
+page.logo.linktitle: Wallner
+config.headerComment: ''
+page.theme.footernavigation.navigationValue: '10'
+page.theme.footernavigation.navigationType: directory
+news.view.templateRootPath: 'EXT:kwm2025/Resources/Private/Templates/News'
+page.theme.language.enable: false
+page.theme.breadcrumb.enable: false
+page.theme.breadcrumb.icon.enable: false
+plugin.bootstrap_package.settings.scss.link-color: '#0062FF'
+plugin.bootstrap_package.settings.scss.enable-shadows: false
