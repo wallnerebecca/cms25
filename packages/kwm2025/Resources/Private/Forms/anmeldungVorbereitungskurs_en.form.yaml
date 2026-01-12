@@ -385,6 +385,7 @@ renderables:
               -
                 properties:
                   options:
+                    Nicht aus Österreich: Not from Austria
                     Oberösterreich: 'Upper Austria'
                     Wien: Vienna
                     Niederösterreich: 'Lower Austria'

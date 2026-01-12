@@ -39,8 +39,12 @@
 #p9 h1,
 #p9 h2 {
   color: #F2F2F2;
+  font-size: calc(4rem + 1.9vw);
+  font-weight: 800;
 }
-
+#p9 h1 {
+  font-size: calc(5rem + 1.9vw);
+}
 
 #c29 {
     background-color: rgb(0,0,0,0) !important;
@@ -48,7 +52,7 @@
     overflow: auto;
     position: absolute;
     z-index: 100;
-    top: 70vh;
+    top: 50vh;
 }
 
 //footer

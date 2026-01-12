@@ -72,8 +72,6 @@ body:not(#p9) .nav-link-toggle.show {
   background-color: #c3c3c3 !important;
 }
 
-
-
 // Footer
 .footer-section-meta {
   background-color: $gray-fill !important;
@@ -82,6 +80,7 @@ body:not(#p9) .nav-link-toggle.show {
 .footer-navigation-link {
   text-decoration: none !important;
   color: $gray-main !important;
+  font-family: 'Antonio', sans-serif;
 }
 
 footer .frame {
