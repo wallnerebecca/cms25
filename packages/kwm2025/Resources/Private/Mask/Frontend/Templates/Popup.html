@@ -34,15 +34,15 @@ function close_modal(element) {
                         </f:for>
                     </f:if>
                     <div id="modal-{itemIterator.index}" class="popup-modal">
-                        <div class="container popup-modal-content">
+                        <div class="container-sm popup-modal-content">
                             <span id="close-{itemIterator.index}" class="close-modal" onclick="close_modal(this)">&times;</span>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-md-6 img-container">
                                     <f:for each="{data_item.tx_mask_img}" as="file">
                                         <f:media file="{file}" class="modal-image" alt="{file.description}" />
                                     </f:for>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6 intro">
                                     <f:if condition="{data_item.tx_mask_intro}">
                                         <f:for each="{data_item.tx_mask_intro}" as="data_item_item">
                                             <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item_item.uid}</f:cObject>

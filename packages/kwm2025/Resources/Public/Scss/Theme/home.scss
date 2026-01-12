@@ -9,10 +9,29 @@
   background: rgb(0, 0, 0, 0.4) !important;
 }
 
-//navbar
-#p9 .navbar-nav {
-  --bs-nav-link-color: #DEDEDE;
-  --bs-nav-link-hover-color: $brown-secondary;
+#p9 .navbar-nav .nav-link.active, #p9 .navbar-nav .nav-link.show {
+  color: $gray-main;
+  padding: 0.6rem 1.5rem;
+  border-radius: 99999px;
+}
+
+#p9 .navbar-nav .nav-link.active {
+  background-color: $brown-secondary;
+}
+
+#p9 .nav-link-text, #p9 .nav-link {
+  color: $gray-main;
+}
+
+#p9 .nav-link-text:hover, #p9 .nav-link:hover {
+  color: $brown-secondary;
+}
+
+#p9 .dropdown-menu {
+  background-color: rgba(190, 190, 190, 0.5);
+  box-shadow: none;
+  border: 3px solid $gray-main;
+  border-radius: .6rem;
 }
 
 //main

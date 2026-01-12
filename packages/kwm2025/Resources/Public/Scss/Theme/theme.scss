@@ -27,8 +27,16 @@
 //
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 
+@media (min-width: 1400px) {
+  .frame-container-default {
+    max-width: 1600px;
+  }
+}
+
+
 html body {
   font-family: 'Cuprum', sans-serif;
+  font-size: 1.4rem;
   letter-spacing: 0.03rem;
   color: $brown-secondary;
 
@@ -133,13 +141,6 @@ p {
   --frame-outer-spacing-before: 0;
 }
 
-#page-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-
-
 //Hufschmiede Wallner
 #p7 p {
   padding-left: calc(2.5rem + 7vw);
@@ -149,7 +150,42 @@ p {
   padding-left: calc(1.5rem + 7vw);
 }
 
-#c119 .frame-container{
+.frame-container{
   padding-left: calc(2.5rem + 7vw - calc(var(--bs-gutter-x) * .5));
   margin-left: 0;
+}
+
+
+//Home - adjustments
+body:not(#p9) .body-bg {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+body:not(#p9) #page-header {
+  flex: 0 1 auto;
+}
+
+body:not(#p9) #page-content {
+  flex: 1 1 auto;
+}
+
+body:not(#p9) .section {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+
+body[id="p7"] .section {
+  justify-content: space-between;
+}
+
+
+body:not(#p9) #c12 {
+  display: none;
+}
+
+body:not(#p9) #page-footer {
+  flex: 0 1 auto;
 }

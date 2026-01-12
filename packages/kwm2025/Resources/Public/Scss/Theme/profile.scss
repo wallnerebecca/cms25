@@ -14,11 +14,10 @@
 .popup-modal-content {
   background-color: $gray-main;
   z-index: 200;
-  height: 60vh;
-  max-height: 70vh;
-  padding: 20px 5px 5px;
-  margin: 17vh auto auto;
-  border: 1px solid $gray-fill;
+  padding: 5px 5px;
+  margin: 6vh auto auto;
+  //border: 1px solid $gray-fill;
+  border-radius: 0.6rem;
 }
 
 .modal-popup-image {
@@ -30,25 +29,38 @@
 }
 
 .modal-image {
-  max-height: 50vh;
-  aspect-ratio: 1;
+  max-width: 100%;
+  height: 100%;
   object-fit: contain;
   border-radius: 0.6rem;
+  padding: 5px 0 5px 5px;
 }
 
 .close-modal {
-  color: #aaaaaa;
+  color: $gray-fill;
   float: right;
   line-height: 56px;
   font-size: 56px;
   font-weight: bold;
-  margin-top: -20px;
   margin-right: 10px;
   z-index: 400;
 }
 
 .close-modal:hover {
-  color: #050505;
+  color: $brown-secondary;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+#c119 .popup-modal-content p {
+  padding-left: 0rem;
+}
+
+#p7 .popup-modal-content .frame-container {
+  padding-left: 0rem;
+}
+
+.img-container {
+  padding: 0;
 }
