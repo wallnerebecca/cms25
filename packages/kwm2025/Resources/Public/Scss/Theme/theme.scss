@@ -193,3 +193,10 @@ body:not(#p9) #c12 {
 body:not(#p9) #page-footer {
   flex: 0 1 auto;
 }
+
+//__________________
+
+#anmeldung-269 fieldset legend.visually-hidden{
+  width: 1rem;
+  height: 1rem;
+}

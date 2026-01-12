@@ -1,26 +1,26 @@
 <script>
-function open_modal(element) {
-    let id = element.id
-    let number = id.substring(5)
-    let modal = document.getElementById("modal-" + number)
+    function open_modal(element) {
+        let id = element.id
+        let number = id.substring(5)
+        let modal = document.getElementById("modal-" + number)
 
-    modal.style.display = "block"
+        modal.style.display = "block"
 
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none"
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none"
+            }
         }
     }
-}
 
-function close_modal(element) {
-    console.log("close modal event!")
-    let id = element.id
-    let number = id.substring(6)
-    let modal = document.getElementById("modal-" + number)
+    function close_modal(element) {
+        console.log("close modal event!")
+        let id = element.id
+        let number = id.substring(6)
+        let modal = document.getElementById("modal-" + number)
 
-    modal.style.display = "none"
-}
+        modal.style.display = "none"
+    }
 </script>
 
 <f:if condition="{data.tx_mask_popup}">
