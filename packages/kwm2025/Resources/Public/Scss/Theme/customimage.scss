@@ -1,13 +1,17 @@
 .picture-box {
   display: block;
   padding: 10px;
-  position: absolute;
-  float: left;
-  overflow: auto;
-  z-index: 1;
   width: auto;
 }
 
+@include media-breakpoint-up(md) {
+  .picture-box {
+    position: absolute;
+    float: left;
+    overflow: auto;
+    z-index: 1;
+  }
+}
 .picture-flex-box {
   display: flex;
   width: 100%;

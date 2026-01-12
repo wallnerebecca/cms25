@@ -5,12 +5,12 @@
   padding-bottom: calc((var(--mainnavigation-nav-height) - var(--mainnavigation-link-height)) / 3);
 }
 
-.navbar-nav {
-  --bs-nav-link-color: $brown-secondary;
-  --bs-nav-link-hover-color: #DEDEDE;
-}
+//body:not(#p9) .navbar-nav .nav-item, body:not(#p9) .navbar-nav {
+//  --bs-nav-link-color: $brown-secondary;
+//  --bs-nav-link-hover-color: #DEDEDE;
+//}
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+body:not(#p9) .navbar-nav .nav-link.active, body:not(#p9) .navbar-nav .nav-link.show {
   color: $gray-main;
   background-color: $brown-secondary;
   padding: 0.6rem 1.5rem;
