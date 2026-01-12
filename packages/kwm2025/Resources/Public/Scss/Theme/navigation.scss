@@ -5,11 +5,6 @@
   padding-bottom: calc((var(--mainnavigation-nav-height) - var(--mainnavigation-link-height)) / 3);
 }
 
-//body:not(#p9) .navbar-nav .nav-item, body:not(#p9) .navbar-nav {
-//  --bs-nav-link-color: $brown-secondary;
-//  --bs-nav-link-hover-color: #DEDEDE;
-//}
-
 body:not(#p9) .navbar-nav .nav-link.active, body:not(#p9) .navbar-nav .nav-link.show {
   color: $gray-main;
   background-color: $brown-secondary;

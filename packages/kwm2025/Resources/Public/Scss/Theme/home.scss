@@ -34,16 +34,27 @@
   border-radius: .6rem;
 }
 
+#p9 .btn-primary {
+  --bs-btn-color: $gray-main;
+  color: $brown-secondary;
+  --bs-btn-hover-bg: $gray-main; //
+  --bs-btn-hover-color: $gray-main;
+  --bs-btn-hover-border-color: $gray-fill; //
+}
+
 //main
 
 #p9 h1,
 #p9 h2 {
   color: #F2F2F2;
-  font-size: calc(4rem + 1.9vw);
+  font-size: calc(1rem + 4vw);
   font-weight: 800;
+  line-height: 0.9;
+  z-index: 3;
 }
+
 #p9 h1 {
-  font-size: calc(5rem + 1.9vw);
+  font-size: calc(1rem + 6vw);
 }
 
 #c29 {
@@ -52,7 +63,7 @@
     overflow: auto;
     position: absolute;
     z-index: 100;
-    top: 50vh;
+    bottom: 10vh;
 }
 
 //footer
