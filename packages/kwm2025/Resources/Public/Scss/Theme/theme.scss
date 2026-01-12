@@ -177,6 +177,10 @@ body:not(#p9) .section {
   height: 100%
 }
 
+body:not(#p9) footer .section {
+  justify-content: center;
+}
+
 body[id="p7"] .section {
   justify-content: space-between;
 }

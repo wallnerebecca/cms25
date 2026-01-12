@@ -1,6 +1,10 @@
 <div class="picture-box">
     <div class="picture-flex-box">
-        <img src="{f:uri.image(src: 'EXT:kwm2025/Resources/Public/Images/gruppenfotoWallner.png')}" alt="All the peepos" class="picture-image"/>
+        <f:if condition="{data.tx_mask_cimg}">
+            <f:for each="{data.tx_mask_cimg}" as="file">
+                <f:media class="picture-image" file="{file}" alt="{file.description}"/>
+            </f:for>
+        </f:if>
     </div>
 </div>
 

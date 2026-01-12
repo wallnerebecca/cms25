@@ -18,11 +18,12 @@
   justify-content: space-evenly;
 }
 
-
 .picture-image {
-  max-width: 50%;
+  max-width: 60%;
+  height:auto;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 8rem;
   object-fit: contain;
   border: 10px solid $gray-main;
   border-radius: 0.8rem;
