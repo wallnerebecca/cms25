@@ -45,7 +45,7 @@ body:not(#p9) .dropdown-menu {
   border-radius: .6rem;
 }
 
-body:not(#p9) .nav-link-text, body:not(#p9) .nav-link {
+body:not(#p9) .nav-link-text, body:not(#p9) .nav-link, body:not(#p9) .navbar-toggler{
   color: $brown-secondary;
 }
 

@@ -19,7 +19,7 @@
   background-color: $brown-secondary;
 }
 
-#p9 .nav-link-text, #p9 .nav-link {
+#p9 .nav-link-text, #p9 .nav-link, #p9 .navbar-toggler {
   color: $gray-main;
 }
 
@@ -63,7 +63,7 @@
     overflow: auto;
     position: absolute;
     z-index: 100;
-    bottom: 10vh;
+    bottom: 14vh;
 }
 
 //footer
